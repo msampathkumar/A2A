@@ -4,16 +4,14 @@ hide:
 ---
 
 <!-- markdownlint-disable MD041 -->
-<div style="text-align: center;">
-  <div class="centered-logo-text-group">
-    <img src="assets/a2a-logo-black.svg" alt="Agent2Agent Protocol Logo" width="100">
-    <h1>Agent2Agent (A2A) Protocol</h1>
+<div class="hero-container">
+  <div class="hero-logo-wrapper">
+    <img src="assets/a2a-logo-black.svg" alt="Agent2Agent Protocol Logo" class="hero-logo light-only">
+    <img src="assets/a2a-logo-white.svg" alt="Agent2Agent Protocol Logo" class="hero-logo dark-only">
   </div>
+  <h1 class="hero-title">Agent2Agent (A2A) Protocol</h1>
+  <p class="hero-subtitle">The open standard for secure, robust, and collaborative communication between AI agents built on any framework.</p>
 </div>
-
-## What is A2A Protocol?
-
-Welcome to the **official documentation** for the **Agent2Agent (A2A) Protocol**, an open standard designed to enable seamless communication and collaboration between AI agents.
 
 Originally developed by Google and now donated to the Linux Foundation, A2A provides the definitive common language for agent interoperability in a world where agents are built using diverse frameworks and by different vendors.
 
@@ -22,7 +20,7 @@ Originally developed by Google and now donated to the Linux Foundation, A2A prov
     **[![ADK Logo](https://google.github.io/adk-docs/assets/agent-development-kit.png){class="twemoji lg middle"} ADK](https://google.github.io/adk-docs/)** _(or any framework)_,
     equip with **[![MCP Logo](https://modelcontextprotocol.io/mcp.png){class="twemoji lg middle"} MCP](https://modelcontextprotocol.io)** _(or any tool)_,
     and communicate with
-    **![A2A Logo](./assets/a2a-logo-black.svg){class="twemoji lg middle"} A2A**,
+    **![A2A Logo](./assets/a2a-logo-black.svg){class="twemoji lg middle light-only"}![A2A Logo](./assets/a2a-logo-white.svg){class="twemoji lg middle dark-only"} A2A**,
     to remote agents, local agents, and humans.
 
 ## Get started with A2A
@@ -67,15 +65,9 @@ Originally developed by Google and now donated to the Linux Foundation, A2A prov
 
 - :material-code-braces:{ .lg .middle } **Download the Official SDKs**
 
-    [:fontawesome-brands-python: Python](https://github.com/a2aproject/a2a-python)
+    Get started quickly with our officially maintained SDKs in popular languages, including Python, JavaScript, Java, C#/.NET, Rust and Golang.
 
-    [:fontawesome-brands-js: JavaScript](https://github.com/a2aproject/a2a-js)
-
-    [:fontawesome-brands-java: Java](https://github.com/a2aproject/a2a-java)
-
-    [:octicons-code-24: C#/.NET](https://github.com/a2aproject/a2a-dotnet)
-
-    [:fontawesome-brands-golang: Golang](https://github.com/a2aproject/a2a-go)
+    [:octicons-arrow-right-24: SDKs](https://a2a-protocol.org/latest/sdk/)
 
 </div>
 

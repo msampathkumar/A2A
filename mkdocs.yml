@@ -71,8 +71,8 @@ theme:
   name: material
   custom_dir: .mkdocs/overrides
   font:
-    text: Google Sans
-    code: Roboto Mono
+    text: Outfit
+    code: Fira Code
   logo: assets/a2a-logo-white.svg
   favicon: assets/a2a-logo-black.svg
   icon:
@@ -92,9 +92,23 @@ theme:
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
   palette:
-    - scheme: default
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: indigo
-      accent: white
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   features:
     - announce.dismiss
     - content.action.view
@@ -109,6 +123,8 @@ theme:
     - navigation.path
     - navigation.top
     - navigation.tracking
+    - navigation.expand
+    - toc.integrate
     - toc.follow
     - versioning:
         provider: mike
