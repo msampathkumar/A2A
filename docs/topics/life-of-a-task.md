@@ -54,11 +54,16 @@ Conceptually, agents operate at different levels of complexity:
     sent. This avoids the `Task`-versus-`Message` decision, but it creates
     completed task objects even for simple interactions.
 - **Hybrid Agents**: Generate both `Message` and `Task` objects. These agents
-    use messages to agree on the agent's capability and the scope of work. They
-    then send a `Task` object to track execution and manage states like
-    `input-required` or error handling. Once a task is created, the agent returns
-    only `Task` objects; once a task is complete, no more messages can be sent.
-    For more information about hybrid agents, see [A2A protocol: Demystifying Tasks vs Messages](https://discuss.google.dev/t/a2a-protocol-demystifying-tasks-vs-messages/255879).
+    use messages to negotiate agent capability and the scope of work, then send a
+    `Task` object to track execution and manage states like `input-required` or
+    error handling. In other words, `Message` objects carry the lightweight
+    back-and-forth that establishes what should be done, and a `Task` is created
+    once there is committed work to execute and observe. As with task-generating
+    agents, once a task is created the agent returns only `Task` objects in
+    response to subsequent messages, and once a task is complete no more messages
+    can be sent to it.
+
+    For a deeper discussion of when to use messages versus tasks, see [A2A protocol: Demystifying Tasks vs Messages](https://discuss.google.dev/t/a2a-protocol-demystifying-tasks-vs-messages/255879).
 
 ## Task Refinements
 
